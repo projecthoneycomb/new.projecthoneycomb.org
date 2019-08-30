@@ -10,7 +10,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1>Introducing Project Honeycomb</h1>
     <h2>What we want to do, how we want to do it and where we need your help.</h2>
-    <div style={{ margin: `50px 0`, background: '#FBDCD9', borderRadius: 10 }}>
+    <div class="hero-container">
       <HeroImage />
     </div>
     <p>As it stands, technology within schools is proving largely ineffectual. Teachers are finding that the hardware and software they are using is burdening them further in an environment where they are already stretched. On the other hand, students today are digital natives. They’re the first generation to have grown up with technology at their fingertips but their experiences in school have yet to match that of their personal lives.</p>

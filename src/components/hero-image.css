@@ -14,3 +14,16 @@
 .st13{fill:#1247BD;}
 .st14{fill:#D25B89;}
 .st15{fill:#1D1D1B;}
+
+.hero-container {
+  margin: 50px 0;
+  background: #FBDCD9; 
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+  .hero-container {
+    margin-left: -40px;
+    min-width: 900px;
+  }
+}
