@@ -1,15 +1,48 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import Img from "gatsby-image"
 import HeroImage from "../components/hero-image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "pp.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  return <Layout>
     <SEO title="Home" />
     <h1>Introducing Project Honeycomb</h1>
     <h2>What we want to do, how we want to do it and where we need your help.</h2>
+    <div class="author-container">
+      <div class="profile-container">
+        <div class="profile-image-container">
+          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+        </div>
+        <div class="double-container">
+          <p style={{fontSize: 20}}>James Williams</p>
+          <p style={{opacity: 0.7, lineHeight: '16px'}}>Founder of Project Honeycomb</p>
+        </div>
+      </div>
+      <div style={{flex: 1}}></div>
+      <div class="double-container">
+        <p>@0charactersleft</p>
+        <a href="https://twitter.com/messages/compose?recipient_id=452382026" target="_blank">Direct message me</a>
+      </div>
+      <div class="double-container">
+        <p>james@projecthoneycomb.org</p>
+        <a href="mailto:james@projecthoneycomb.org" target="_blank">Email me</a>
+      </div>
+    </div>
     <div class="hero-container">
       <HeroImage />
     </div>
@@ -32,7 +65,27 @@ const IndexPage = () => (
     <p>We don’t know yet. The people at Honeycomb have a commercial & research background, with a desire to help support education. We want to listen to you; students, teachers and leadership, and learn about the problems as you see them to try and solve them with you. We want to conduct a research phase of 3 months to help understand what you need and have your invaluable input in this process.</p>
     <h3>How can I help?</h3>
     <p>Firstly, it’s important that we don’t add more burden to your life if you’re a teacher, student, senior leader or just an interested parent, so you can choose how you want to talk to us and how much. We don’t want to, nor will we, abuse any time or contact information you give us.</p>
+    <div class="author-container">
+      <div class="profile-container">
+        <div class="profile-image-container">
+          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+        </div>
+        <div class="double-container">
+          <p style={{fontSize: 20}}>James Williams</p>
+          <p style={{opacity: 0.7, lineHeight: '16px'}}>Founder of Project Honeycomb</p>
+        </div>
+      </div>
+      <div style={{flex: 1}}></div>
+      <div class="double-container">
+        <p>@0charactersleft</p>
+        <a href="https://twitter.com/messages/compose?recipient_id=452382026" target="_blank">Direct message me</a>
+      </div>
+      <div class="double-container">
+        <p>james@projecthoneycomb.org</p>
+        <a href="mailto:james@projecthoneycomb.org" target="_blank">Email me</a>
+      </div>
+    </div>
   </Layout>
-)
+}
 
 export default IndexPage
