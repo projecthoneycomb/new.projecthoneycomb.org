@@ -35,11 +35,11 @@ const IndexPage = () => {
       </div>
       <div style={{flex: 1}}></div>
       <div class="double-container">
-        <p>@0charactersleft</p>
+        <p class="hideonmobile">@0charactersleft</p>
         <a href="https://twitter.com/messages/compose?recipient_id=452382026" target="_blank">Direct message me</a>
       </div>
       <div class="double-container">
-        <p>james@projecthoneycomb.org</p>
+        <p class="hideonmobile">james@projecthoneycomb.org</p>
         <a href="mailto:james@projecthoneycomb.org" target="_blank">Email me</a>
       </div>
     </div>
@@ -60,12 +60,13 @@ const IndexPage = () => {
     <p>What we weren’t expecting to find was the amount of homegrown software, systems and solutions found in schools across the UK. Innovative, requirement-led, useful and engaging software made by the school, an enthusiastic teacher and sometimes even budding students! This is exciting, invigorating and inspiring to us that this autonomy and drive is clearly there in schools whether that’s a website, an app or even a complicated excel spreadsheet. However, the problems with these solutions often outweigh the benefits. They are difficult and time consuming to support, once the original creator leaves or is too busy improving or fixing it is often more work than starting over and can have huge security and privacy problems.</p>
     <p>Like the USDS and 18F for government, is there space in education for a middle ground between these two worlds? One that keeps the innovation, autonomy and creativity of teachers, students and administrators but which comes from a basis of security, privacy, support and best practices. How can these systems and insights be shared between schools? How can the money being spent on sub-par software be used more effectively?</p>
     <h3>Building a private space for mental wellbeing</h3>
-    <p>...</p>
+    <p>Support for bringing conversations around mental health and wellbeing into education have grown rapidly over the last few years, as has the concern around the privacy and security of everyone’s, but especially children’s, data. The desire to help students understand their own mental health, monitor their wellbeing and set them up with the tools they need to cope in the modern world is fundamentally opposed by the current ‘capture all, wide access’ strategy regarding data and analytics that we’re seeing in schools today.</p>
+    <p>We believe that first we need to address this privacy imbalance of students’ information. Currently, data about a student is able to be viewed by any teachers, in the same way that their detention records or predicted grades can be. We don’t believe thoughts and feelings should be treated as mere data entry. Instead, what we think is the right approach, is a place for students to keep a track of how the day went, their thoughts and feelings, whether they feel their workload is too much, in a completely confidential setting.</p>
     <h3>Okay, but how are you going to do this?</h3>
     <p>We don’t know yet. The people at Honeycomb have a commercial & research background, with a desire to help support education. We want to listen to you; students, teachers and leadership, and learn about the problems as you see them to try and solve them with you. We want to conduct a research phase of 3 months to help understand what you need and have your invaluable input in this process.</p>
     <h3>How can I help?</h3>
     <p>Firstly, it’s important that we don’t add more burden to your life if you’re a teacher, student, senior leader or just an interested parent, so you can choose how you want to talk to us and how much. We don’t want to, nor will we, abuse any time or contact information you give us.</p>
-    <div class="author-container">
+    <div class="author-container" style={{marginTop: 50, marginBottom: 10}}>
       <div class="profile-container">
         <div class="profile-image-container">
           <Img fluid={data.placeholderImage.childImageSharp.fluid} />
@@ -77,11 +78,11 @@ const IndexPage = () => {
       </div>
       <div style={{flex: 1}}></div>
       <div class="double-container">
-        <p>@0charactersleft</p>
+        <p class="hideonmobile">@0charactersleft</p>
         <a href="https://twitter.com/messages/compose?recipient_id=452382026" target="_blank">Direct message me</a>
       </div>
       <div class="double-container">
-        <p>james@projecthoneycomb.org</p>
+        <p class="hideonmobile">james@projecthoneycomb.org</p>
         <a href="mailto:james@projecthoneycomb.org" target="_blank">Email me</a>
       </div>
     </div>
