@@ -1,6 +1,6 @@
-.st0{fill:var(--hair-color);}
+.hair{fill:var(--hair-color);}
 .st1{fill:#EA493D;}
-.st2{fill:var(--skin-color);}
+.skin{fill:var(--skin-color);}
 .st3{fill:#8C6239;}
 .st4{fill:#A67C52;}
 .st5{fill:#FFFFFF;}
@@ -15,15 +15,29 @@
 .st14{fill:#D25B89;}
 .st15{fill:#1D1D1B;}
 
+.cls-1{fill:#666;}
+.cls-2{fill:#EA493D;}
+.cls-3{fill:var(--skin-color);}
+.cls-4{fill:#fff;}
+.cls-5{fill:transparent;}
+.cls-6{fill:#232323;}
+
 .hero-container {
-  margin: 20px 0 50px;
+  margin: 50px 0 30px;
+  height: 270px;
   background: #FBDCD9; 
   border-radius: 10px;
+  text-align: center;
+}
+
+.hero-container svg {
+  height: 100%;
 }
 
 @media only screen and (max-width: 750px) {
   .hero-container {
-    margin-left: -40px;
-    min-width: 900px;
+    margin-left: -30px;
+    width: 100vw;
+    border-radius: 0;
   }
 }
