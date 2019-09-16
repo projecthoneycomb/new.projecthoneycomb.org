@@ -29,6 +29,7 @@ const IndexPage = () => {
     <p>We are going to conduct a series of research on the existing infrastructure for mental wellbeing inside schools, the best way to assist students in this “feelings, thoughts, reflection, conversation” process and if improved mental wellbeing correlates with improved secondary metrics. <a class="inline" href="/wellbeing">Learn more</a></p> 
     <h3>Okay, but practically how are you going to do this?</h3>
     <p>We don’t know yet. The people at Honeycomb have a commercial & research background, with a desire to help support education. We don’t want to presume a wrongly biased solution, and therefore want and need to listen to you; students, teachers and leaders.</p>
+    <p>We are going to conduct a research phase of 3 months in pilot schools to help understand what you need and have your invaluable input in this process.</p>
     <h3>How can I help?</h3>
     <p>Firstly, it’s important that we don’t add more burden to your life if you’re a teacher, student, senior leader or just an interested parent, so you can choose how you want to talk to us and how much. We don’t want to, nor will we, abuse any time or contact information you give us.</p>
     <p>If you want to get involved, drop me an email or message below and we can go from there!</p>
