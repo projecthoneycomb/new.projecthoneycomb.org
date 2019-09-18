@@ -19,7 +19,7 @@ const HeroImage = ({ Image, align }) => {
   const hairOptions = ['#ecbc88', '#1a1a1a', '#5e3623', '#9f462c', '#cd9f6e'];
   var hair = hairOptions[Math.floor(Math.random() * hairOptions.length)];
 
-  const skinOptions = ['#5e443a', '#9c7662', '#d9a77d', '#eebfa7'];
+  const skinOptions = ['#715449', '#9c7662', '#d9a77d', '#eebfa7'];
   var skin = skinOptions[Math.floor(Math.random() * skinOptions.length)];
   
   let style = align === 'center' ? 'hero-container center' : 'hero-container';
